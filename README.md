@@ -1,13 +1,24 @@
 # macro-workshop-playground
 
-A Clojure library designed to ... well, that part is up to you.
+Welcome to the macro workshop for LambdaJam. Install leiningen (http://leiningen.org/) and clone this repository.
+
+If everything's working properly, you should be able to run
+
+lein run
+
+at your terminal within this repository and see a welcome message.
+
 
 ## Usage
 
-FIXME
+lein run
+
+or
+
+lein repl
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Drew Colthorp
 
 Distributed under the Eclipse Public License, the same as Clojure.
