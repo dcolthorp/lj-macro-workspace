@@ -17,13 +17,13 @@
     (is (= (funhouse '(* 3 1)) '(/ 3 1)))
     (is (= (funhouse '(/ 3 1)) '(* 3 1)))))
 
-;; 2. funhouse
+;; 2. Recursive funhouse
 
 (deftest recursive-funhouse-test
   (testing "recursive funhouse"
     (is (= (funhouse '(+ 1 (/ 3 1))) '(- 1 (* 3 1))))))
 
-;; 3. extra credit
+;; 3. Extra credit
 
 (deftest extra-credit-funhouse-test
   (testing "funhouse recursing into maps, vectors, and sets"
@@ -107,8 +107,9 @@
 
 (deftest pre-str-test
   (testing "pre-str"
-    (is (= "1 :foo 3 NO_SOURCE_PATH"
-           (pre-str 1 " " :foo " " (+ 1 2) " " *file*)))))
+    (let [bar "baz"]
+      (is (= "1 :foo 3 baz"
+             (pre-str 1 " " :foo " " (+ 1 2) " " bar))))))
 
 ;; 2. Extra credit
 
@@ -126,6 +127,7 @@
 
 (deftest and-*-test
   (testing "and-*"
+    (is (= true (and-*)))
     (is (= 0 (and-* 0)))
     (is (= 1 (and-* 0 1)))
     (is (= 2 (and-* 0 1 2)))
