@@ -25,6 +25,6 @@ You should also use the repl to experiment with Clojure functions and your macro
 
 ## License
 
-Copyright © 2013 Drew Colthorp
+Copyright © 2013 Atomic Object
 
 Distributed under the Eclipse Public License, the same as Clojure.
