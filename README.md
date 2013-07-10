@@ -23,6 +23,16 @@ To test-drive your work run uncomment a test case(s) for an exercise in `test/ma
 
 You should also use the repl to experiment with Clojure functions and your macros - using macroexpand-1, for example. If you want to reload your source file from the repl call `(use :reload-all 'macro-workshop-playground.core)` or type `quit` and `lein repl` to restart it.
 
+## References
+
+cheatsheet.pdf includes most of the basic clojure functions you'll need for the exercises.
+
+handout.pdf contains the workshop content.
+
+For a more in-depth resource, see [the ClojureDocs quick reference](http://clojuredocs.org/quickref/Clojure%20Core).
+
+
+
 ## License
 
 Copyright © 2013 Atomic Object
