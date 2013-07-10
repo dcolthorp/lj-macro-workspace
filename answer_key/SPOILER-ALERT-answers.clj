@@ -29,7 +29,7 @@
 
 (defmacro debug [expr]
   `(let [x# ~expr]
-     (println 'x# :> x#)
+     (println ~expr :> x#)
      x#))
 
 
